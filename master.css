@@ -1,0 +1,65 @@
+.cNt{
+  margin-top:  90px;
+
+}
+
+.cNt h1{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.cNt .cnt   img{
+  border-radius: 25px;
+}
+
+.cnt {
+  display: grid;
+  grid-template-columns:  repeat(auto-fit, minmax(300px, auto));
+  margin-top:  90px;
+  justify-content: center;
+
+  padding:35px;
+}
+@media (maxwidth,400px) {
+  .cnt {
+    display: grid;
+    grid-template-columns:  repeat(1, minmax(300px, auto));
+    margin-top:  90px;
+    justify-content: space-between;
+
+    padding:35px;
+  }
+  .cNt .contact {
+    display: grid;
+    justify-content: space-between;
+  }
+}
+
+.cNt .contact {
+  display: grid;
+  justify-content: space-around;
+}
+
+.cNt .contact .ab {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap:10px;
+}
+
+.cNt .contact .ab input[type="text"]{
+
+    width: 80%;
+    height: 30px;
+}
+
+.cNt .contact .ab textarea{
+  width: 80%;
+  height: 150px;
+}
+
+.cNt .contact .ab p{
+  display: flex;
+  align-items: center;
+}
