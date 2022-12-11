@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="master.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Document</title>
+
+    <title>contact</title>
 </head>
 <body>
   <!--====HEADER====-->
@@ -34,30 +35,30 @@
         <img src="img/chinese rest.jpg" width="250em" alt="chinese restaurant">
       </div>
 
-      <div class="contact">
-        <div class="ab">
-          <p>nom</p>
-          <input type="text" name="name" value="">
-        </div>
-        <div class="ab">
-          <p>nom</p>
-          <input type="text" name="name" value="">
-        </div>
-        <div class="ab">
-          <p>nom</p>
-          <input type="text" name="name" value="">
-        </div>
-        <div class="ab">
-          <p>nom</p>
-          <input type="text" name="name" value="">
-        </div>
-        <div class="ab">
-          <p class="txt">nom</p>
-            <textarea name="name"></textarea>
-        </div>
-      </div>
+      <div class="container">
+      <form action="action_page.php">
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="lname">Email</label>
+        <input type="text" id="email" name="mail" placeholder="Email">
+
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <input onclick="message()" type="submit" value="Submit">
+
+      </form>
     </div>
   </section>
+
+
+
 
   <!--===FOOTER===-->
   <footer>

@@ -1,388 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-	
-    <title>menu</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+	<title>menu</title>
 </head>
+
 <body>
-    <!--====HEADER====-->
-    <header class="navBar">
-      <label class="logo"><img src="img/logo.png" width=50px ></label>
-    	<nav>
-    		<ul>
-          <i class="bx bx-x close-menu"></i>
-    			<li><a  href="index.html">Home</a></li>
-    			<li><a  class="active" href="menu.html">Menu</a></li>
-    			<li><a href="about.html">About</a></li>
-    			<li><a href="contact.html">Contact Us</a></li>
-				<i class='bx bx-shopping-bag' id="cart-icon"></i>
-    		</ul>
-			
-    	</nav>
+	<!--====HEADER====-->
+	<header class="navBar">
+		<label class="logo"><img src="img/logo.png" width=50px></label>
+
+		<nav>
+			<ul>
+				<i class="bx bx-x close-menu"></i>
+				<li><a href="index.html">Home</a></li>
+				<li><a class="active" href="menu.html">Menu</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+				<div class="cart-icon">
+					<i class='bx bx-shopping-bag' id="cart-icon"></i>
+					<div id="cart-qunatity">0</div>
+				</div>
+			</ul>
+
+		</nav>
 
 		<div class="cart">
-            <h2 class="cart-title">You cart</h2>
-            <!-- content -->
-            <div class="cart-content">
-                
-				
-            </div>
-			
-            <!-- total -->
-            <div class="total">
-                <div class="total-title">total</div>   
-                <div class="total-price">$0</div>
-            </div>
-            <!-- buy button -->
-            <button onclick="buy2()" type="button" class="btn-buy">buy</button>
-            <!-- cart close -->
-            <i class='bx bx-x' id="close-cart"></i>
-        </div>
-      <i class='bx bx-menu burger'></i>
-  </header>
-  <section class="package" id="package">
+			<h2 class="cart-title">cart</h2>
+			<!-- content -->
+			<div class="cart-content">
+
+
+			</div>
+
+			<!-- total -->
+			<div class="total">
+				<div class="total-title">total</div>
+				<div class="total-price">$0</div>
+			</div>
+			<!-- buy button -->
+			<button onclick="rm()" type="button" class="btn-buy">buy</button>
+			<!-- cart close -->
+
+			<i class='bx bx-x' id="close-cart"></i>
+
+		</div>
+
+		<i class='bx bx-menu burger'></i>
+	</header>
+	<section class="package" id="package">
 		<div class="title">
 			<h2>our menu <br> all</h2>
 		</div>
-    <div class="bTn">
-      <input data-sushi=".package-content" class="filter" type="button" name="all" value="all" id="all">
-      <input data-sushi=".soupe" class="filter" type="button" name="soupe" value="soupe" id="soupe">
-      <input data-sushi=".principal" class="filter" type="button" name="principal" value="princupal" id="all">
-      <input data-sushi=".dessert" class="filter" type="button" name="dessert" value="dessert" id="des">
-    </div>
-	<div>
+		<div class="bTn">
+			<input w=".package-content all" class="filter" type="button" name="all" value="all" id="all">
+			<input data-sushi=".soupe" class="filter" type="button" name="soupe" value="soupe" id="soupe">
+			<input data-sushi=".principal" class="filter" type="button" name="principal" value="princupal" id="princupal">
+			<input data-sushi=".dessert" class="filter" type="button" name="dessert" value="dessert" id="des">
+		</div>
+		<div>
 
-	</div>
-	<div class="package-content principal">
+		</div>
+		<div class="package-content principal">
 			<div class="box">
 				<div class="thum">
-					<img src="img/food/1.jpg">
+					<img class="th" src="img/food/1.jpg">
 				</div>
 				<div class="dest-content">
 					<div class="addC">
 						<div class="location">
-						<h4 class="title-product">suschi plat</h4>
-						<h3>$149</h3>
+							<h4 class="title-product">suschi plat</h4>
+							<h3>$149</h3>
 						</div>
-						<div class="add-to-cart">
-							<i class='bx bx-cart add-cart'></i>
-						</div>
+
 					</div>
-					<div class="stars">
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-					</div>
+
 				</div>
 			</div>
 
 			<div class="box">
 				<div class="thum">
-					<img src="img/food/2.jpg">
+					<img class="th" src="img/food/2.jpg">
 				</div>
 				<div class="dest-content">
 					<div class="addC">
 						<div class="location">
-						<h4 class="title-product">ramen</h4>
-						<h3>$36</h3>
+							<h4 class="title-product">ramen</h4>
+							<h3>$36</h3>
 						</div>
-						<div class="add-to-cart">
-							<i class='bx bx-cart add-cart'></i>
-						</div>
+
 					</div>
-					<div class="stars">
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-					</div>
+
 				</div>
 			</div>
 			<div class="box">
 				<div class="thum">
-					<img src="img/food/3.jpg">
+					<img class="th" src="img/food/3.jpg">
 				</div>
 				<div class="dest-content">
 					<div class="addC">
 						<div class="location">
-						<h4 class="title-product">sushi vintage</h4>
-						<h3>$30</h3>
+							<h4 class="title-product">sushi vintage</h4>
+							<h3>$30</h3>
 						</div>
-						<div class="add-to-cart">
-							<i class='bx bx-cart add-cart'></i>
-						</div>
+
 					</div>
-					<div class="stars">
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-					</div>
+
 				</div>
 			</div>
 			<div class="box">
 				<div class="thum">
-					<img src="img/food/4.jpg">
+					<img class="th" src="img/food/4.jpg">
 				</div>
 				<div class="dest-content">
 					<div class="addC">
 						<div class="location">
-						<h4 class="title-product">spongeboob</h4>
-						<h3>$80</h3>
+							<h4 class="title-product">spongeboob</h4>
+							<h3>$80</h3>
 						</div>
-						<div class="add-to-cart">
-							<i class='bx bx-cart add-cart'></i>
-						</div>
+
 					</div>
-					<div class="stars">
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-					</div>
+
 				</div>
 			</div>
 			<div class="box">
 				<div class="thum">
-					<img src="img/food/5.jpg">
+					<img class="th" src="img/food/5.jpg">
 				</div>
 				<div class="dest-content">
 					<div class="addC">
 						<div class="location">
-						<h4 class="title-product">sushi</h4>
-						<h3>$49</h3>
+							<h4 class="title-product">sushi</h4>
+							<h3>$49</h3>
 						</div>
-						<div class="add-to-cart">
-							<i class='bx bx-cart add-cart'></i>
-						</div>
+
 					</div>
-					<div class="stars">
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-					</div>
+
 				</div>
 			</div>
 			<div class="box">
 				<div class="thum">
-					<img src="img/food/6.jpg">
+					<img class="th" src="img/food/6.jpg">
 				</div>
 				<div class="dest-content">
 					<div class="addC">
 						<div class="location">
-						<h4 class="title-product">sea fruit</h4>
-						<h3>$80</h3>
+							<h4 class="title-product">sea fruit</h4>
+							<h3>$80</h3>
 						</div>
-						<div class="add-to-cart">
-							<i class='bx bx-cart add-cart'></i>
-						</div>
+
 					</div>
-					<div class="stars">
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-						<a href="#"><i class='bx bxs-star'></i></a>
-					</div>
+
 				</div>
 			</div>
-	</div>
-	<div class="package-content dessert">
-		<div class="box">
-			<div class="thum">
-				<img src="img/food/dessert/1.jpg">
-			</div>
-			<div class="dest-content">
-				<div class="addC">
-					<div class="location">
-					<h4 class="title-product">choclate</h4>
-					<h3>$22</h3>
-					</div>
-					<div class="add-to-cart">
-						<i class='bx bx-cart add-cart'></i>
-					</div>
+		</div>
+		<div class="package-content dessert">
+			<div class="box">
+				<div class="thum">
+					<img class="th" src="img/food/dessert/1.jpg">
 				</div>
-				<div class="stars">
-					<a href="#"><i class='bx bxs-star'></i></a>
-					<a href="#"><i class='bx bxs-star'></i></a>
-					<a href="#"><i class='bx bxs-star'></i></a>
-					<a href="#"><i class='bx bxs-star'></i></a>
-					<a href="#"><i class='bx bxs-star'></i></a>
+				<div class="dest-content">
+					<div class="addC">
+						<div class="location">
+							<h4 class="title-product">choclate</h4>
+							<h3>$22</h3>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="thum">
+					<img class="th" src="img/food/dessert/3.jpg">
+				</div>
+				<div class="dest-content">
+					<div class="addC">
+						<div class="location">
+							<h4 class="title-product">piece of choclate</h4>
+							<h3>$149</h3>
+						</div>
+
+					</div>
+
 				</div>
 			</div>
 		</div>
 
-		<div class="box">
-			<div class="thum">
-				<img src="img/food/dessert/3.jpg">
-			</div>
-			<div class="dest-content">
-				<div class="addC">
-					<div class="location">
-					<h4 class="title-product">piece of choclate</h4>
-					<h3>$149</h3>
-					</div>
-					<div class="add-to-cart">
-						<i class='bx bx-cart add-cart'></i>
-					</div>
+		<div class="package-content soupe">
+			<div class="box">
+				<div class="thum">
+					<img class="th" src="img/food/soupe/pexels-cats-coming-1406501.jpg">
 				</div>
-				<div class="stars">
-					<a href="#"><i class='bx bxs-star'></i></a>
-					<a href="#"><i class='bx bxs-star'></i></a>
-					<a href="#"><i class='bx bxs-star'></i></a>
-					<a href="#"><i class='bx bxs-star'></i></a>
-					<a href="#"><i class='bx bxs-star'></i></a>
-				</div>
-			</div>
-		</div>
-	</div>
+				<div class="dest-content">
+					<div class="addC">
+						<div class="location">
+							<h4 class="title-product">soupe 2</h4>
+							<h3>$149</h3>
+						</div>
 
-	<div class="package-content soupe">
-		<div class="box">
-			<div class="thum">
-				<img src="img/food/soupe/pexels-cats-coming-1406501.jpg">
-			</div>
-			<div class="dest-content">
-				<div class="addC">
-					<div class="location">
-					<h4 class="title-product">soupe 2</h4>
-					<h3>$149</h3>
 					</div>
-					<div class="add-to-cart">
-						<i class='bx bx-cart add-cart'></i>
-					</div>
-				</div>
-				<div class="stars">
-					<a href="#"><i class='bx bxs-star'></i></a>
-					<a href="#"><i class='bx bxs-star'></i></a>
-					<a href="#"><i class='bx bxs-star'></i></a>
-					<a href="#"><i class='bx bxs-star'></i></a>
-					<a href="#"><i class='bx bxs-star'></i></a>
+
 				</div>
 			</div>
-		</div>
-		<div class="box">
-			<div class="thum">
-				<img src="img/food/soupe/pexels-foodie-factor-539451.jpg">
-			</div>
-			<div class="dest-content">
-				<div class="addC">
-					<div class="location">
-					<h4 class="title-product">soupe 1</h4>
-					<h3>$25</h3>
-					</div>
-					<div class="add-to-cart">
-						<i class='bx bx-cart add-cart'></i>
-					</div>
+			<div class="box">
+				<div class="thum">
+					<img class="th" src="img/food/soupe/pexels-foodie-factor-539451.jpg">
 				</div>
-				<div class="stars">
-					<a href="#"><i class='bx bxs-star'></i></a>
-					<a href="#"><i class='bx bxs-star'></i></a>
-					<a href="#"><i class='bx bxs-star'></i></a>
-					<a href="#"><i class='bx bxs-star'></i></a>
-					<a href="#"><i class='bx bxs-star'></i></a>
+				<div class="dest-content">
+					<div class="addC">
+						<div class="location">
+							<h4 class="title-product">soupe 1</h4>
+							<h3>$25</h3>
+						</div>
+
+					</div>
+
 				</div>
 			</div>
-		</div>
-		<div class="box">
-			<div class="thum">
-				<img src="img/food/soupe/pexels-navada-ra-1703272.jpg">
-			</div>
-			<div class="dest-content">
-				<div class="addC">
-					<div class="location">
-					<h4 class="title-product">soupe 3</h4>
-					<h3>$27</h3>
-					</div>
-					<div class="add-to-cart">
-						<i class='bx bx-cart add-cart'></i>
-					</div>
+			<div class="box">
+				<div class="thum">
+					<img class="th" src="img/food/soupe/pexels-navada-ra-1703272.jpg">
 				</div>
-				<div class="stars">
-					<a href="#"><i class='bx bxs-star'></i></a>
-					<a href="#"><i class='bx bxs-star'></i></a>
-					<a href="#"><i class='bx bxs-star'></i></a>
-					<a href="#"><i class='bx bxs-star'></i></a>
-					<a href="#"><i class='bx bxs-star'></i></a>
+				<div class="dest-content">
+					<div class="addC">
+						<div class="location">
+							<h4 class="title-product">soupe 3</h4>
+							<h3>$27</h3>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+			<div class="box">
+				<div class="thum">
+					<img class="th" src="img/food/soupe/pexels-pixabay-209540.jpg">
+				</div>
+				<div class="dest-content">
+					<div class="addC">
+						<div class="location">
+							<h4 class="title-product">soupe 4</h4>
+							<h3>$25</h3>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+			<div class="box">
+				<div class="thum">
+					<img class="th" src="img/food/soupe/pexels-valeria-boltneva-724667.jpg">
+				</div>
+				<div class="dest-content">
+					<div class="addC">
+						<div class="location">
+							<h4 class="title-product">soupe 5</h4>
+							<h3>$28</h3>
+						</div>
+
+					</div>
+
 				</div>
 			</div>
 		</div>
-		<div class="box">
-			<div class="thum">
-				<img src="img/food/soupe/pexels-pixabay-209540.jpg">
-			</div>
-			<div class="dest-content">
-				<div class="addC">
-					<div class="location">
-					<h4 class="title-product">soupe 4</h4>
-					<h3>$25</h3>
-					</div>
-					<div class="add-to-cart">
-						<i class='bx bx-cart add-cart'></i>
-					</div>
-				</div>
-				<div class="stars">
-					<a href="#"><i class='bx bxs-star'></i></a>
-					<a href="#"><i class='bx bxs-star'></i></a>
-					<a href="#"><i class='bx bxs-star'></i></a>
-					<a href="#"><i class='bx bxs-star'></i></a>
-					<a href="#"><i class='bx bxs-star'></i></a>
-				</div>
-			</div>
-		</div>
-		<div class="box">
-			<div class="thum">
-				<img src="img/food/soupe/pexels-valeria-boltneva-724667.jpg">
-			</div>
-			<div class="dest-content">
-				<div class="addC">
-					<div class="location">
-					<h4 class="title-product">soupe 5</h4>
-					<h3>$28</h3>
-					</div>
-					<div class="add-to-cart">
-						<i class='bx bx-cart add-cart'></i>
-					</div>
-				</div>
-				<div class="stars">
-					<a href="#"><i class='bx bxs-star'></i></a>
-					<a href="#"><i class='bx bxs-star'></i></a>
-					<a href="#"><i class='bx bxs-star'></i></a>
-					<a href="#"><i class='bx bxs-star'></i></a>
-					<a href="#"><i class='bx bxs-star'></i></a>
-				</div>
-			</div>
-		</div>
-	</div>
 	</section>
 
 
 
-  <!--===FOOTER===-->
-  <footer>
-    <div class="socialM">
-		<a href="#"><i class='bx bxl-facebook' ></i></a>
-		<a href="#"><i class='bx bxl-instagram-alt' ></i></a>
-		<a href="#"><i class='bx bxl-twitter' ></i></a>
-    </div>
-    <div>
-      <p>ALL RIGHTS RESERVED © HITAKA 2022</p>
-    </div>
-  </footer>
-    <!-- <script src="js/script.js"></script> -->
+	<!--===FOOTER===-->
+	<footer>
+		<div class="socialM">
+			<a href="#"><i class='bx bxl-facebook'></i></a>
+			<a href="#"><i class='bx bxl-instagram-alt'></i></a>
+			<a href="#"><i class='bx bxl-twitter'></i></a>
+		</div>
+		<div>
+			<p>ALL RIGHTS RESERVED © HITAKA 2022</p>
+		</div>
+	</footer>
+	<!-- <script src="js/script.js"></script> -->
 	<script src="js/main.js"></script>
-  </body>
+</body>
+
 </html>

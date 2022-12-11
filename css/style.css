@@ -11,6 +11,7 @@
 
 body{
   font-family: montrserrat;
+  position: relative;
 }
 
 header{
@@ -23,8 +24,8 @@ header{
 	align-items: center;
 	justify-content: space-between;
 	padding: 30px 10%;
-  border-color: black;
-  border-bottom: 0px;
+  	border-color: black;
+ 	border-bottom: 0px;
 }
 
 
@@ -88,42 +89,13 @@ nav ul .close-menu {
 	display: none;
 }
 
-@media (max-width: 768px) {
-	.burger{
-		display: block !important;
-		font-size: 40px;
-	}
-	.navBar nav {
-		position: fixed;
-		top: 0;
-		right: 0;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: 100vh;
-		width: 70%;
-		background-color: #fff;
-		transform: translateX(100%);
-		transition: .3s;
-	}
-	nav.nav-active {
-		transform: translateX(0%);
-	}
-	nav ul {
-		flex-direction: column;
-		justify-content: center;
-		margin: 0;
-		height: 100%;
-	}
-	nav ul .close-menu {
-		position: absolute;
-		right: 1rem;
-		top: 1rem;
-		display: block;
-		font-size: 40px;
-		cursor: pointer;
-	}
+.ab {
+
+	margin-top: 90px;
+	margin-right: 50px ;
+	margin-left: 50px;
 }
+
 
 
 
@@ -145,11 +117,13 @@ nav ul .close-menu {
 
 .main2 .ab  img{
 	border-radius: 25px;
+	width: 40%;
 }
 
 
 .main1 .ab  img{
 	border-radius: 25px;
+	width: 40%;
 }
 
 .main2 .ab {
@@ -226,7 +200,7 @@ footer {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	
+
 
 }
 input[type=button],.add-to-cart{
@@ -268,31 +242,127 @@ input[type=button]:hover,.add-to-cart:hover{
 	transform: scale(1.1);
 }
 
+.cart-icon {
+	display: flex;
+	align-items: center;
+}
+
+.abou{
+	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.abou p{
+text-align: justify;
+margin-top: 20px;
+margin-bottom: 30px;
+margin-left: 35px;
+margin-right: 35px;
+}
+
+.abou img{
+	height:80vh;
+	 width:40vw;
+}
+
+
+@media (max-width: 768px) {
+	.burger{
+		display: block !important;
+		font-size: 40px;
+	}
+	.navBar nav {
+		position: fixed;
+		top: 0;
+		right: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		width: 70%;
+		background-color: #fff;
+		transform: translateX(100%);
+		transition: .3s;
+	}
+	nav.nav-active {
+		transform: translateX(0%);
+	}
+	nav ul {
+		flex-direction: column;
+		justify-content: center;
+		margin: 0;
+		height: 100%;
+	}
+	nav ul .close-menu {
+		position: absolute;
+		right: 1rem;
+		top: 1rem;
+		display: block;
+		font-size: 40px;
+		cursor: pointer;
+	}
+}
+
 
 @media (max-width: 430px) {
+
+	.main1 {
+		margin: 0;
+	}
+	.main2 {
+		margin: 0;
+	}
 	.main2 .ab {
+		margin-top: 0px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		
 	}
 	.main1 .ab {
+		margin-top: 0px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 	.main1 .ab img{
 		padding: 25 px;
+		width: 325px;
 	}
+	.main2 .ab img{
+		padding: 25 px;
+		width: 325px;
+	}
+	.main2 .ab p{
+		margin: 0 px;
+		text-align: justify;
+	}
+	.main1 .ab p{
+		margin: 0 px;
+		text-align: justify;
+	}
+	
 	.bTn {
 		display: flex;
 		flex-direction: column;
 		cursor: pointer;
+		
 	}
 
+	.bTn input{
+		margin: auto;
+	}
 	.bTn input:not(:last-of-type) {
 		margin-bottom: 1rem;
+		/* margin: auto; */
 	}
-	
+	.abou img{
+		height:70vh;
+		 width:70vw;
+	}
+
 }
 
 /*.thum img {

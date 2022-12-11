@@ -76,7 +76,7 @@ section{
     font-size: 1rem;
 }
 .cart-remove{
-
+	margin-left:80px ;
 }
 .vart-product-title{
     font-size: 1rem;
@@ -101,10 +101,18 @@ section{
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
+	border-radius: 25px;
 }
 .total-title{
     font-size: 1rem;
     font-weight: 600;
+}
+
+.detail-box{
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	gap:20px;
 }
 #close-cart{
     position: absolute;
@@ -127,7 +135,9 @@ section{
 }
 
 
-
+input[type=number]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+  }
 
 
 
@@ -231,6 +241,22 @@ section{
 }
 .thum:hover{
 	transform: scale(1.14);
+	position: relative;
+	filter: grayscale(1);
+}
+
+.thum:hover::after{
+	content: "Add to cart";
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	font-size: 4vw;
+	color: #fff;
+	min-width: max-content;
+	-webkit-text-stroke-color: #000;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-fill-color: #fff;
 }
 
 .destination-content{
